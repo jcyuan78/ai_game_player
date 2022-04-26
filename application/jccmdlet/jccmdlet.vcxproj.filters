@@ -21,10 +21,10 @@
     <ClInclude Include="source\pch.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="source\rational.h">
+    <ClInclude Include="include\jcbuffer.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="source\permutation.h">
+    <ClInclude Include="source\cmdlet-buffer.h">
       <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>
@@ -39,16 +39,13 @@
     </Image>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="source\AssemblyInfo.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
     <ClCompile Include="source\pch.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="source\rational.cpp">
+    <ClCompile Include="source\jcbuffer.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="source\permutation.cpp">
+    <ClCompile Include="source\AssemblyInfo.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>

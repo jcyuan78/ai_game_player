@@ -95,10 +95,14 @@ namespace rational {
 			r3->m_rat->Simplify();
 			return r3;
 		}
+		static bool operator > (Rational^ r1, Rational^ r2)
+		{
+			return r1->GetValue() > r2->GetValue();
+		}
 
 		virtual String^ ToString(System::String^ format, IFormatProvider^ formatprovider);
 		virtual String^ ToString(System::String^ format) { return ToString(format, nullptr); }
-
+		double GetValue(void) { return (double)m_rat->m_mol / m_rat->m_den; }
 		
 		//整数部分，分子，分母
 		//void SetValue(int ii, int mm, UINT dd);
@@ -107,8 +111,6 @@ namespace rational {
 		static Rational ^ Set(String ^ str);
 	protected:
 		CRational* m_rat;
-
-
 	};
 
 
